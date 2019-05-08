@@ -1,17 +1,24 @@
 //list all var/const/let/arrays/objects here
+var wordToGuess = ["fern", "rose", "pathos", "spider"];
+var score = 0;
+var tries = 5;
 
 
-
-//list all scories/tries/lives code here
+//list all scores/tries/lives code here
 
 
 
 //PART ONE-----------------------------------------------------------------------
 //code to randomly select a wordToGuess
+randomWordToGuess = Math.floor(Math.random()*wordToGuess.length);//this is randomly guessing the index 
+for (var i = 0; i < randomWordToGuess; i++) {
+var targetDiv = document.getElementsById("randomWord");
+var randomWordDiv = document.createElement("div");
+randomWordDiv.textContent = randomWordToGuess[i];
+targetDiv.appendChild(randomWordDiv);
+}
 
-
-
-//code to calculate the number of letters in the randomly selected wordToGuess
+//code to calculate the number of letters in the randomly selected wordToGuess HINT: use function char_count
 
 
 
