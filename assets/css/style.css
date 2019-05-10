@@ -1,7 +1,7 @@
-h1 {
+.titleBox, .directionsBox, .guessBox, .imageBox, .dumpBox {
+    border-style:solid;
     text-align:center;
+    padding: 40px;
+
 }
 
-p{
-    text-align:center;
-}
