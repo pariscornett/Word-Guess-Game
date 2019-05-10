@@ -1,35 +1,27 @@
-//list all var/const/let/arrays/objects here
-var wordList = ["fern", "rose", "pathos", "spider"];
-var score = 0;
-var tries = 10;
-
-
-//list all scores/tries/lives code here
-
+//get set up
+var wordBank = ["fern", "rose", "lavender"];
 
 
 //PART ONE-----------------------------------------------------------------------
 //code to randomly select a word from wordList
-var randomWord = [Math.floor(Math.random()*wordList.length)];//this is randomly guessing the index 
+var wordBank = (Math.floor(Math.random() * wordBank.lengths));
+
+
+//this is randomly guessing the index 
 /*for (var i = 0; i < randomWord; i++) {
 var targetDiv = document.getElementById("randomWord");
 var randomWordDiv = document.createElement("div");
 randomWordDiv.textContent = randomWord[i];
-targetDiv.append("#randomWord");
-}
-WE MIGHT NEED TO DELETE THIS?^^ */
+targetDiv.append("#randomWord"); */
+
+//WE MIGHT NEED TO DELETE THIS?^^ 
 
 //code to make the guessed word appear as underscores so the user can know how many letters are in the word.
-var answer = [];
-for (var i = 0; i < randomWord.length; i++) {
-    answer[i] = "_";
-}
 
-var lettersLeftToGuess= randomWord.length;
 
 //***********************************The Main Game********************** */
 //while there are letters left to be guessed
-while(remainingLetters > 0) {
+/*while(remainingLetters > 0) {
     //show the player their progress
     while (lettersLeftToGuess > 0){
         alert(answer.join(" ");)
@@ -121,4 +113,4 @@ while(remainingLetters > 0) {
 
 
 //MAKE THIS STOP THE WHOLE GAME--------------------------------------------------
-        
+        */
