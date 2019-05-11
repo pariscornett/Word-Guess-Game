@@ -16,7 +16,7 @@ var remainingLetters = word.length;
 //the actual game
 while (remainingLetters > 0) {
     //show player their progress
-   alert(answerArray.join(" "));   //makes one united string
+     //makes one united string
 
     //now we get the player to guess
     var guess = prompt("Guess a letter, or click Cancel to stop playing.");
@@ -36,9 +36,10 @@ while (remainingLetters > 0) {
      }
     
     }   
+    alert(answerArray.join(" ")); 
+
 //end of actual game loop
 }
 
 //update the player of their success
-alert(answerArray.join(" "));
 alert("Good job! The answer was " + word);
