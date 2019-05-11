@@ -28,17 +28,13 @@ while (remainingLetters > 0) {
         alert("Please enter a single letter.");
     } else {
         //update the game with valid guess
-       function myFunction() {
-        var userGuess = document.getElementById ("guessBox").value;
-        console.log(userGuess);
-        document.getElementById("keyGuessed").innerHTML = userGuess;
         for (var j = 0; j < word.length; j++) {
             if (word[j] === guess) {
                 answerArray[j] = guess;
                 remainingLetters --;
             } 
      }
-    }
+    
     }   
 //end of actual game loop
 }
