@@ -16,23 +16,30 @@ var remainingLetters = word.length;
 //the actual game
 while (remainingLetters > 0) {
     //show player their progress
-    alert(answerArray.join(" "));   //makes one united string
+   alert(answerArray.join(" "));   //makes one united string
 
     //now we get the player to guess
-    var guess = prompt ("Guess a letter, or click Cancel to stop playing.");
+    var guess = prompt("Guess a letter, or click Cancel to stop playing.");
     if (guess === null) {
+        alert(answerArray.join(" "));
+        alert("Too hard to keep going? The answer was " + word);
         break;
     } else if (guess.length !==1) {
         alert("Please enter a single letter.");
     } else {
         //update the game with valid guess
+       function myFunction() {
+        var userGuess = document.getElementById ("guessBox").value;
+        console.log(userGuess);
+        document.getElementById("keyGuessed").innerHTML = userGuess;
         for (var j = 0; j < word.length; j++) {
             if (word[j] === guess) {
                 answerArray[j] = guess;
                 remainingLetters --;
-            }
-        }
+            } 
+     }
     }
+    }   
 //end of actual game loop
 }
 
